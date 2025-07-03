@@ -1,0 +1,37 @@
+# .gitignore para proyecto KiCad CM4 Robotics Controller
+
+# Archivos temporales de KiCad
+*.000
+*.bak
+*.bck
+*.kicad_pcb-bak
+*.kicad_sch-bak
+*.kicad_prl
+*.sch-bak
+*~
+_autosave-*
+*.tmp
+*-save.pro
+*-save.kicad_pcb
+fp-info-cache
+
+# Archivos de Netlist
+*.net
+
+# Archivos de BOM
+*.xml
+*.csv
+
+# Archivos de Gerber
+*.gbr
+*.drl
+*.gbrjob
+
+# Archivos de backup
+\#auto_saved_files\#
+
+# Carpetas específicas
+.DS_Store
+.directory
+.vscode
+__pycache__/
