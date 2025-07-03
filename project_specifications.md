@@ -46,3 +46,29 @@
 * **QSPI Flash**: Longitudes similares para todas las líneas
 * **Líneas de Motor**: Pistas anchas (>0.5mm) para manejar corriente
 * **Planos de Potencia**: Separación adecuada entre dominios de potencia
+
+
+
+## 5. Actualizaciones para la Versión 2 (V2)
+
+### 5.1. Nuevos Componentes y Adaptaciones
+
+*   **Conector USB Tipo-C para CM4**: Se reemplazará el conector USB existente por un conector USB Tipo-C para el CM4, permitiendo una conexión más moderna y versátil. Este conector debe soportar la funcionalidad de datos y alimentación.
+*   **Adaptación para Disco NVMe**: Se incluirá un conector M.2 (Key M) para un disco de estado sólido NVMe, aprovechando la interfaz PCIe del CM4. Esto requerirá la adición de un subsistema PCIe/NVMe y la gestión de las señales de alta velocidad.
+*   **Compatibilidad con Cámara OAK-D-Lite**: Se asegurará la compatibilidad con la cámara OAK-D-Lite. Esto implicará la provisión de alimentación adecuada y la conexión de datos (posiblemente a través de USB o PCIe, dependiendo de la interfaz de la cámara y el diseño).
+
+### 5.2. Modificaciones en Subsistemas Existentes
+
+*   **USB_Subsystem.kicad_sch**: Se actualizará para incorporar el conector USB Tipo-C. Esto puede implicar la adición de componentes para la negociación de potencia (Power Delivery) si se requiere, aunque inicialmente se enfocará en la conectividad de datos.
+*   **CM4_Subsystem.kicad_sch**: Se revisará para asegurar que las conexiones PCIe del CM4 estén disponibles y correctamente enrutadas hacia el nuevo conector NVMe.
+
+### 5.3. Nuevo Subsistema (PCIe/NVMe)
+
+*   **PCIe_NVMe_Subsystem.kicad_sch**: Se creará una nueva hoja esquemática jerárquica para gestionar la interfaz PCIe del CM4 y el conector M.2 para el NVMe. Esto incluirá la adaptación de impedancia y el enrutamiento de las líneas diferenciales PCIe.
+
+### 5.4. Consideraciones de Diseño Adicionales para V2
+
+*   **Enrutamiento PCIe/NVMe**: Las líneas PCIe son de alta velocidad y requerirán un enrutamiento diferencial con impedancia controlada (generalmente 85Ω o 100Ω, a verificar con la especificación PCIe y el stackup de la PCB). Se deberá prestar especial atención a la igualdad de longitud y al acoplamiento.
+*   **Alimentación NVMe**: Se deberá proporcionar la alimentación adecuada (generalmente 3.3V) al conector NVMe.
+*   **Conectividad OAK-D-Lite**: Se definirán los pines y la interfaz (USB o PCIe) para la conexión de la cámara OAK-D-Lite, y se asegurará que las redes necesarias estén disponibles y enrutadas correctamente.
+

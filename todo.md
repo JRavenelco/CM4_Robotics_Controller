@@ -52,3 +52,17 @@
   - [ ] Comprimir proyecto completo
   - [ ] Proporcionar documentación de uso y fabricación
   - [ ] Entregar paquete final al usuario
+
+
+- [ ] **Paso 9: Actualizaciones para la Versión 2 (V2)**
+  - [ ] **Modificaciones de Esquemáticos para V2**
+    - [ ] Actualizar `USB_Subsystem.kicad_sch` para conector USB Tipo-C
+    - [ ] Crear `PCIe_NVMe_Subsystem.kicad_sch` para NVMe
+    - [ ] Asegurar compatibilidad con OAK-D-Lite en esquemáticos (alimentación, datos)
+  - [ ] **Modificaciones de Layout de PCB para V2**
+    - [ ] Integrar conector USB Tipo-C en el layout de PCB
+    - [ ] Adaptar layout para conector M.2 NVMe
+    - [ ] Enrutar líneas PCIe/NVMe con impedancia controlada
+    - [ ] Considerar colocación y enrutamiento para OAK-D-Lite
+
+
