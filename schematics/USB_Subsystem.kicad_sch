@@ -1,0 +1,57 @@
+(kicad_sch (version 20230121) (generator eeschema)
+
+  (uuid 00000000-0000-0000-0000-00005f3c1de6)
+
+  (paper "A4")
+
+  (title_block
+    (title "CM4 Robotics Controller - USB Subsystem")
+    (date "2025-07-03")
+    (rev "v1.0")
+    (company "Manus AI")
+  )
+
+  (lib_symbols)
+
+  (text "USB Subsystem\n\nConecta la entrada del U_USB_HUB a USB_DP/DN del CM4.\nConecta dos de las salidas del hub a los conectores J_USB_A1 y J_USB_A2.\nImplementa la lógica de conmutación para el puerto J_USB_C para el modo rpiboot."
+    (at 63.5 38.1 0)
+    (effects (font (size 2.54 2.54)) (justify left bottom))
+    (uuid 00000000-0000-0000-0000-00005f3c6df1)
+  )
+
+  (global_label "+5V_SYS" (shape input) (at 38.1 63.5 0) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify left))
+    (uuid 00000000-0000-0000-0000-00005f3c6df2)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 38.1 63.5 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+  )
+
+  (global_label "+3V3_SYS" (shape input) (at 38.1 68.58 0) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify left))
+    (uuid 00000000-0000-0000-0000-00005f3c6df3)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 38.1 68.58 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+  )
+
+  (global_label "USB_DP" (shape input) (at 38.1 73.66 0) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify left))
+    (uuid 00000000-0000-0000-0000-00005f3c6df4)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 38.1 73.66 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+  )
+
+  (global_label "USB_DN" (shape input) (at 38.1 78.74 0) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify left))
+    (uuid 00000000-0000-0000-0000-00005f3c6df5)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 38.1 78.74 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+  )
+
+  (sheet_instances
+    (path "/" (page "1"))
+  )
+)

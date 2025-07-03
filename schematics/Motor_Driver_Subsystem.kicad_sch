@@ -1,0 +1,73 @@
+(kicad_sch (version 20230121) (generator eeschema)
+
+  (uuid 00000000-0000-0000-0000-00005f3c1de4)
+
+  (paper "A4")
+
+  (title_block
+    (title "CM4 Robotics Controller - Motor Driver Subsystem")
+    (date "2025-07-03")
+    (rev "v1.0")
+    (company "Manus AI")
+  )
+
+  (lib_symbols)
+
+  (text "Motor Driver Subsystem\n\nAlimenta los U_M_A y U_M_B con +8V_MOT (VM) y +3V3_SYS (VCC).\nConecta 8 pines PWM del RP2040 a los pines PWMA/PWMB de los drivers.\nConecta 8 pines GPIO del RP2040 a los pines AIN1/AIN2/BIN1/BIN2 de los drivers.\nConecta las salidas de los drivers (AO1/AO2/BO1/BO2) a los pines M1/M2 de los conectores J_LPF_A-D.\nConecta los pines ID1/ID2 de los conectores LPF2 a pines GPIO/UART del RP2040."
+    (at 63.5 38.1 0)
+    (effects (font (size 2.54 2.54)) (justify left bottom))
+    (uuid 00000000-0000-0000-0000-00005f3c4df1)
+  )
+
+  (global_label "+8V_MOT" (shape input) (at 38.1 63.5 0) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify left))
+    (uuid 00000000-0000-0000-0000-00005f3c4df2)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 38.1 63.5 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+  )
+
+  (global_label "+3V3_SYS" (shape input) (at 38.1 68.58 0) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify left))
+    (uuid 00000000-0000-0000-0000-00005f3c4df3)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 38.1 68.58 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+  )
+
+  (global_label "PWM_MOTOR_A1" (shape input) (at 38.1 73.66 0) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify left))
+    (uuid 00000000-0000-0000-0000-00005f3c4df4)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 38.1 73.66 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+  )
+
+  (global_label "PWM_MOTOR_A2" (shape input) (at 38.1 78.74 0) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify left))
+    (uuid 00000000-0000-0000-0000-00005f3c4df5)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 38.1 78.74 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+  )
+
+  (global_label "PWM_MOTOR_B1" (shape input) (at 38.1 83.82 0) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify left))
+    (uuid 00000000-0000-0000-0000-00005f3c4df6)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 38.1 83.82 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+  )
+
+  (global_label "PWM_MOTOR_B2" (shape input) (at 38.1 88.9 0) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify left))
+    (uuid 00000000-0000-0000-0000-00005f3c4df7)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 38.1 88.9 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+  )
+
+  (sheet_instances
+    (path "/" (page "1"))
+  )
+)

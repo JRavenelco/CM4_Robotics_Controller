@@ -1,0 +1,121 @@
+(kicad_sch (version 20230121) (generator eeschema)
+
+  (uuid e63e39d7-6ac0-4ffd-8aa3-1841a4541b55)
+
+  (paper "A4")
+
+  (title_block
+    (title "CM4 Robotics Controller")
+    (date "2025-07-03")
+    (rev "v1.0")
+    (company "Manus AI")
+  )
+
+  (lib_symbols)
+
+  (sheet (at 38.1 25.4) (size 50.8 25.4) (fields_autoplaced)
+    (stroke (width 0.1524) (type solid))
+    (fill (color 0 0 0 0.0000))
+    (uuid 00000000-0000-0000-0000-00005f3c1de1)
+    (property "Sheetname" "Power_Subsystem" (at 38.1 24.6884 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheetfile" "Power_Subsystem.kicad_sch" (at 38.1 51.3846 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+    (instances
+      (project "CM4_Robotics_Controller"
+        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55" (page "2"))
+      )
+    )
+  )
+
+  (sheet (at 114.3 25.4) (size 50.8 25.4) (fields_autoplaced)
+    (stroke (width 0.1524) (type solid))
+    (fill (color 0 0 0 0.0000))
+    (uuid 00000000-0000-0000-0000-00005f3c1de2)
+    (property "Sheetname" "CM4_Subsystem" (at 114.3 24.6884 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheetfile" "CM4_Subsystem.kicad_sch" (at 114.3 51.3846 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+    (instances
+      (project "CM4_Robotics_Controller"
+        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55" (page "3"))
+      )
+    )
+  )
+
+  (sheet (at 38.1 76.2) (size 50.8 25.4) (fields_autoplaced)
+    (stroke (width 0.1524) (type solid))
+    (fill (color 0 0 0 0.0000))
+    (uuid 00000000-0000-0000-0000-00005f3c1de3)
+    (property "Sheetname" "RP2040_Subsystem" (at 38.1 75.4884 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheetfile" "RP2040_Subsystem.kicad_sch" (at 38.1 102.1846 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+    (instances
+      (project "CM4_Robotics_Controller"
+        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55" (page "4"))
+      )
+    )
+  )
+
+  (sheet (at 114.3 76.2) (size 50.8 25.4) (fields_autoplaced)
+    (stroke (width 0.1524) (type solid))
+    (fill (color 0 0 0 0.0000))
+    (uuid 00000000-0000-0000-0000-00005f3c1de4)
+    (property "Sheetname" "Motor_Driver_Subsystem" (at 114.3 75.4884 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheetfile" "Motor_Driver_Subsystem.kicad_sch" (at 114.3 102.1846 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+    (instances
+      (project "CM4_Robotics_Controller"
+        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55" (page "5"))
+      )
+    )
+  )
+
+  (sheet (at 38.1 127.0) (size 50.8 25.4) (fields_autoplaced)
+    (stroke (width 0.1524) (type solid))
+    (fill (color 0 0 0 0.0000))
+    (uuid 00000000-0000-0000-0000-00005f3c1de5)
+    (property "Sheetname" "Sensor_Subsystem" (at 38.1 126.2884 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheetfile" "Sensor_Subsystem.kicad_sch" (at 38.1 152.9846 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+    (instances
+      (project "CM4_Robotics_Controller"
+        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55" (page "6"))
+      )
+    )
+  )
+
+  (sheet (at 114.3 127.0) (size 50.8 25.4) (fields_autoplaced)
+    (stroke (width 0.1524) (type solid))
+    (fill (color 0 0 0 0.0000))
+    (uuid 00000000-0000-0000-0000-00005f3c1de6)
+    (property "Sheetname" "USB_Subsystem" (at 114.3 126.2884 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheetfile" "USB_Subsystem.kicad_sch" (at 114.3 152.9846 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+    (instances
+      (project "CM4_Robotics_Controller"
+        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55" (page "7"))
+      )
+    )
+  )
+
+  (sheet_instances
+    (path "/" (page "1"))
+  )
+)

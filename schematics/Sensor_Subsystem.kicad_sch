@@ -1,0 +1,81 @@
+(kicad_sch (version 20230121) (generator eeschema)
+
+  (uuid 00000000-0000-0000-0000-00005f3c1de5)
+
+  (paper "A4")
+
+  (title_block
+    (title "CM4 Robotics Controller - Sensor Subsystem")
+    (date "2025-07-03")
+    (rev "v1.0")
+    (company "Manus AI")
+  )
+
+  (lib_symbols)
+
+  (text "Sensor Subsystem\n\nConecta los pines SDA y SCL de los cuatro U_SENS_1-4 a las redes I2C_SENS_SDA e I2C_SENS_SCL respectivamente.\nColoca un único par de resistencias pull-up de 4.7kΩ en estas redes, conectadas a +3V3_SYS.\nConecta el pin GPIO0/CE de cada sensor a un GPIO único en el RP2040 (p. ej., SENS1_CE, SENS2_CE, etc.)."
+    (at 63.5 38.1 0)
+    (effects (font (size 2.54 2.54)) (justify left bottom))
+    (uuid 00000000-0000-0000-0000-00005f3c5df1)
+  )
+
+  (global_label "+3V3_SYS" (shape input) (at 38.1 63.5 0) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify left))
+    (uuid 00000000-0000-0000-0000-00005f3c5df2)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 38.1 63.5 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+  )
+
+  (global_label "I2C_SENS_SDA" (shape bidirectional) (at 38.1 68.58 0) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify left))
+    (uuid 00000000-0000-0000-0000-00005f3c5df3)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 38.1 68.58 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+  )
+
+  (global_label "I2C_SENS_SCL" (shape input) (at 38.1 73.66 0) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify left))
+    (uuid 00000000-0000-0000-0000-00005f3c5df4)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 38.1 73.66 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+  )
+
+  (global_label "SENS1_CE" (shape input) (at 38.1 78.74 0) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify left))
+    (uuid 00000000-0000-0000-0000-00005f3c5df5)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 38.1 78.74 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+  )
+
+  (global_label "SENS2_CE" (shape input) (at 38.1 83.82 0) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify left))
+    (uuid 00000000-0000-0000-0000-00005f3c5df6)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 38.1 83.82 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+  )
+
+  (global_label "SENS3_CE" (shape input) (at 38.1 88.9 0) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify left))
+    (uuid 00000000-0000-0000-0000-00005f3c5df7)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 38.1 88.9 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+  )
+
+  (global_label "SENS4_CE" (shape input) (at 38.1 93.98 0) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify left))
+    (uuid 00000000-0000-0000-0000-00005f3c5df8)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 38.1 93.98 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+  )
+
+  (sheet_instances
+    (path "/" (page "1"))
+  )
+)

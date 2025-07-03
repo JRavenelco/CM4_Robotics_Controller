@@ -1,0 +1,97 @@
+(kicad_sch (version 20230121) (generator eeschema)
+
+  (uuid 00000000-0000-0000-0000-00005f3c1de3)
+
+  (paper "A4")
+
+  (title_block
+    (title "CM4 Robotics Controller - RP2040 Subsystem")
+    (date "2025-07-03")
+    (rev "v1.0")
+    (company "Manus AI")
+  )
+
+  (lib_symbols)
+
+  (text "RP2040 Subsystem\n\nImplementa el circuito mínimo para el U_RP2040: alimentación (+3V3_SYS a IOVDD/DVDD/etc.), desacoplamiento, cristal X_RP2040 con sus condensadores, y la memoria flash U_FLASH en los pines QSPI.\nConecta un pin UART RX a CM4_TX_RP2040_RX.\nConecta un pin UART TX a CM4_RX_RP2040_TX.\nEnruta los pines SWCLK, SWDIO, GND a un cabezal de depuración de 3 pines.\nConecta los pines I2C (SDA, SCL) a las redes I2C_SENS_SDA e I2C_SENS_SCL."
+    (at 63.5 38.1 0)
+    (effects (font (size 2.54 2.54)) (justify left bottom))
+    (uuid 00000000-0000-0000-0000-00005f3c3df1)
+  )
+
+  (global_label "+3V3_SYS" (shape input) (at 38.1 63.5 0) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify left))
+    (uuid 00000000-0000-0000-0000-00005f3c3df2)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 38.1 63.5 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+  )
+
+  (global_label "CM4_TX_RP2040_RX" (shape input) (at 38.1 68.58 0) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify left))
+    (uuid 00000000-0000-0000-0000-00005f3c3df3)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 38.1 68.58 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+  )
+
+  (global_label "CM4_RX_RP2040_TX" (shape output) (at 38.1 73.66 0) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify left))
+    (uuid 00000000-0000-0000-0000-00005f3c3df4)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 38.1 73.66 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+  )
+
+  (global_label "I2C_SENS_SDA" (shape bidirectional) (at 38.1 78.74 0) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify left))
+    (uuid 00000000-0000-0000-0000-00005f3c3df5)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 38.1 78.74 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+  )
+
+  (global_label "I2C_SENS_SCL" (shape output) (at 38.1 83.82 0) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify left))
+    (uuid 00000000-0000-0000-0000-00005f3c3df6)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 38.1 83.82 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+  )
+
+  (global_label "SENS1_CE" (shape output) (at 38.1 88.9 0) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify left))
+    (uuid 00000000-0000-0000-0000-00005f3c3df7)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 38.1 88.9 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+  )
+
+  (global_label "SENS2_CE" (shape output) (at 38.1 93.98 0) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify left))
+    (uuid 00000000-0000-0000-0000-00005f3c3df8)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 38.1 93.98 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+  )
+
+  (global_label "SENS3_CE" (shape output) (at 38.1 99.06 0) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify left))
+    (uuid 00000000-0000-0000-0000-00005f3c3df9)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 38.1 99.06 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+  )
+
+  (global_label "SENS4_CE" (shape output) (at 38.1 104.14 0) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify left))
+    (uuid 00000000-0000-0000-0000-00005f3c3dfa)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 38.1 104.14 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+  )
+
+  (sheet_instances
+    (path "/" (page "1"))
+  )
+)
