@@ -72,3 +72,10 @@
 *   **Alimentación NVMe**: Se deberá proporcionar la alimentación adecuada (generalmente 3.3V) al conector NVMe.
 *   **Conectividad OAK-D-Lite**: Se definirán los pines y la interfaz (USB o PCIe) para la conexión de la cámara OAK-D-Lite, y se asegurará que las redes necesarias estén disponibles y enrutadas correctamente.
 
+
+
+### 5.5. Compatibilidad con OAK-D-Lite
+
+La compatibilidad con la cámara OAK-D-Lite se logrará a través de las interfaces USB o PCIe ya provistas en la placa. Se asume que la cámara se conectará a uno de los puertos USB Tipo-C o a través de un adaptador PCIe a USB/MIPI si es necesario. No se requiere un subsistema esquemático dedicado para la OAK-D-Lite, ya que su conectividad se gestionará a través de las interfaces estándar de la placa.
+
+
