@@ -58,7 +58,7 @@
   - [X] **Modificaciones de Esquemáticos para V2**
     - [X] Actualizar `USB_Subsystem.kicad_sch` para conector USB Tipo-C
     - [X] Crear `PCIe_NVMe_Subsystem.kicad_sch` para NVMe
-    - [X] Asegurar compatibilidad con OAK-D-Lite en esquemáticos (alimentación, datos) - [ ] **Modificaciones de Layout de PCB para V2**
+    - [X] Asegurar compatibilidad con OAK-D-Lite en esquemáticos (alimentación, datos  - [ ] **Modificaciones de Layout de PCB para V2** (Requiere intervención manual en KiCad)
     - [ ] Integrar conector USB Tipo-C en el layout de PCB
     - [ ] Adaptar layout para conector M.2 NVMe
     - [ ] Enrutar líneas PCIe/NVMe con impedancia controlada
